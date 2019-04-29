@@ -6,7 +6,7 @@ Two uses:
 1. To protect user's privacy
 2. To not have to worry about misshandeling user data or data breaches.
 
----- How to use ----
+# How to use
 When initializing:
   UserID is your user's ID from your Database
   "DataClam.new_user(userID)"
@@ -23,7 +23,7 @@ When retrieving data in Swift:
 When your user wants to share access to data:
   "DataClam.share(friendID, data_id)"
  
----- How it works ----
+# How it works
 Each instance of the framework (inside a user's app) will contain a key for each data that belongs to them. 
 When a user creates some data, DataClam will encrypt the data with the key, store it in a server, (Either run the server app 
 yourself or use DataClam's servers), and returns an ID that represents the data. The developer can do what they wish with the
