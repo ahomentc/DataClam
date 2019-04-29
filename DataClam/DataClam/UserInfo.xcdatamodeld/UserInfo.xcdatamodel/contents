@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Data" representedClassName="DataClam.Data" syncable="YES" codeGenerationType="class">
+        <attribute name="data_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ForeignKey" representedClassName="DataClam.ForeignKey" syncable="YES" codeGenerationType="class">
+        <attribute name="data_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="friend" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="foreignkey" inverseEntity="Friend" syncable="YES"/>
+    </entity>
+    <entity name="Friend" representedClassName="DataClam.Friend" syncable="YES" codeGenerationType="class">
+        <attribute name="default_data_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="foreignkey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ForeignKey" inverseName="friend" inverseEntity="ForeignKey" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="DataClam.User" syncable="YES" codeGenerationType="class">
+        <attribute name="default_data_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="private_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="public_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Data" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="Friend" positionX="-36" positionY="27" width="128" height="90"/>
+        <element name="ForeignKey" positionX="-18" positionY="36" width="128" height="90"/>
+    </elements>
+</model>

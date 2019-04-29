@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../ForeignKeys+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../ForeignKeys+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Friends+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Friends+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
