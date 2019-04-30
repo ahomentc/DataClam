@@ -38,5 +38,6 @@ Framework also allows for sharing of data between your users by sharing AES keys
 -----------------------
 
 Currently working to enable for IOS applications. 
-Very much work in progress. Convering code from privacyTweets application to DataClam Framework.
+Very much work in progress. Convering code from SecretSocial application to DataClam Framework.
+SecretSocial Repo: https://github.com/ahomentc/SecretSocial
 
